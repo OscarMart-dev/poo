@@ -5,8 +5,12 @@ import java.util.Scanner;
 
 /**
  * 
+<<<<<<< Updated upstream
  * 
  * @author oscar
+=======
+ * @author oscar martinez rivera@
+>>>>>>> Stashed changes
  */
 public class Poo {
 
@@ -112,3 +116,4 @@ public class Poo {
 
     }
 }
+
