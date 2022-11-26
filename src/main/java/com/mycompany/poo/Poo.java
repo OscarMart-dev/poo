@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 /**
  * 
- * 
- * @author oscar
+ * @author oscar martinez rivera@
  */
 public class Poo {
 
@@ -28,8 +27,8 @@ public class Poo {
             System.out.println("3. Estudiante");
             System.out.println("4. Salir");
 
-            try {
-            //seleccionar uuna opción 
+            try { //aciones que pueden producir una incidencia
+            //seleccionar una opción 
                 System.out.println("Escribe una de las opciones");
                 opcion = scanner.nextInt();
                 //seleccionar uuna opción segundo menu
@@ -101,14 +100,20 @@ public class Poo {
                         salir = true;
                         break;
                     default:
-                        System.out.println("Solo números entre 1 y 4.");
+                        System.out.println("Se debe seleccionar un numero entre 1 y 4");
                 }
 
-            } catch (InputMismatchException e) {
-                System.out.println("Debes insertar un número");
+            } catch (InputMismatchException e) { //instrucción para controlar la excepción en caso de que no se ingrese un numero
+                System.out.println("Se debe ingresar un dato de tipo numerico");
                 scanner.next();
+            } catch (Exception e) {
+                //
+                System.out.println(e); 
+            }finally { //instrucción que siempre se ejecuta despues de un bloque try,  sin importar si hay una excepción o no
+                System.out.println("------Fin de programa------");
             }
         }
 
     }
 }
+
